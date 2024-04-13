@@ -1,0 +1,38 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel= "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <!-- Sidebar content goes here -->
+            <div class="todo">
+                <img src="ma.png" class="ma">
+                <h1 style="cursor: default;">Create your task list</h1> &nbsp; 
+                <input type="text" id="taskInput" placeholder="Enter a new task"> &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                <button onclick="addTask()" class="ok">Add Task</button>
+            </div>
+            <a href="https://linkedin.com" class="display"><i class="fa-brands fa-linkedin" style="color: black;"></i></a>
+            
+            <a href="https://linkedin.com" class="display"><i class="fa-brands fa-github" style="color: black;"></i></a>
+            <a href=""><i class="fa-solid fa-envelope" style="color: black;"></i></a>
+            <a href=""><i class="fa-solid fa-phone" style="color: black;"></i></a>
+        </div>
+        <div class="main-content">
+            <!-- Main content goes here -->
+            <div>
+                <h1 style="cursor: default;">TASKS :</h1>
+                <ul id="taskList" style="background-color: whitesmoke; border-radius: 5px;"></ul>
+            </div>
+            <button id="delete"><i class="fa-solid fa-trash"></i>Delete Task</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
